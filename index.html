@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lic. Leo Maiello — Yo Sin Culpa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand" data-nav="inicio">
+      <span class="lic">LIC.</span>
+      <span class="name">Leo Maiello</span>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav class="links" id="navLinks">
+      <button data-nav="inicio" class="active">Inicio</button>
+      <button data-nav="suscribirse">Suscribirse</button>
+      <button data-nav="libros">Libros</button>
+      <button data-nav="cursos">Cursos</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page active" id="page-inicio">
+    <div class="hero wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="tag">Nueva charla</span>
+          <h1 class="wordmark display">
+            <span class="l1 yo">YO</span>
+            <span class="l2 sc">SIN CULPA</span>
+          </h1>
+          <p class="lede">Una charla sobre soltar la culpa, reírse de uno mismo y animarse a vivir distinto. Texto de ejemplo — reemplazá esto por la bajada real cuando la tengas.</p>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="#" data-nav="cursos">Ver cursos</a>
+            <a class="btn btn-outline" href="#" data-nav="suscribirse">Sumarme a la lista</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="img/leo1.jpeg" alt="ft-pres">
+        </div>
+      </div>
+    </div>
+
+    <div class="bio wrap">
+      <div class="bio-grid">
+        <div>
+          <div class="eyebrow">Quién es</div>
+          <h2>Biografía</h2>
+        </div>
+        <div>
+          <blockquote>"Un párrafo destacado o frase representativa de Leo, a modo de cita — placeholder."</blockquote>
+          <p>Texto de biografía de ejemplo. Acá va la presentación de Leo Maiello: su recorrido, su enfoque, y por qué habla de lo que habla. Reemplazá este bloque con el contenido real.</p>
+          <p>Segundo párrafo de ejemplo, para desarrollar más su trayectoria, formación o hitos destacados de su carrera.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="preview wrap">
+      <div class="preview-head">
+        <h2>Explorá más</h2>
+      </div>
+      <div class="card-grid">
+        <div class="mini-card violet">
+          <div class="dot"></div>
+          <h3>Libros</h3>
+          <p>Conocé los libros publicados por Leo Maiello. Contenido de ejemplo.</p>
+          <a class="link" href="#" data-nav="libros">Ver libros →</a>
+        </div>
+        <div class="mini-card teal">
+          <div class="dot"></div>
+          <h3>Cursos</h3>
+          <p>Charlas, talleres y cursos disponibles. Contenido de ejemplo.</p>
+          <a class="link" href="#" data-nav="cursos">Ver cursos →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-suscribirse">
+    <div class="page-head wrap">
+      <div class="eyebrow">Newsletter</div>
+      <h1>Suscribite</h1>
+      <p>Recibí novedades sobre charlas, libros y cursos de Leo Maiello. Texto de ejemplo — ajustar según lo que realmente se vaya a enviar.</p>
+    </div>
+    <div class="subscribe-body wrap">
+      <div class="subscribe-grid">
+        <div>
+          <ul class="benefit-list">
+            <li><span class="badge">✓</span> Aviso anticipado de nuevas fechas y charlas (ejemplo)</li>
+            <li><span class="badge">✓</span> Contenido exclusivo para suscriptores (ejemplo)</li>
+            <li><span class="badge">✓</span> Descuentos en libros y cursos (ejemplo)</li>
+            <li><span class="badge">✓</span> Sin spam — cancelás cuando quieras (ejemplo)</li>
+          </ul>
+        </div>
+        <div class="form-card">
+          <h3>Sumate a la lista</h3>
+          <p class="small">Este formulario es solo de interfaz (sin backend conectado todavía).</p>
+          <form id="subscribeForm">
+            <div class="field">
+              <label for="subName">Nombre</label>
+              <input id="subName" type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="field">
+              <label for="subEmail">Email</label>
+              <input id="subEmail" type="email" placeholder="tu@email.com" required>
+            </div>
+            <button class="btn btn-solid" type="submit">Suscribirme</button>
+          </form>
+          <div class="success-msg" id="subSuccess">¡Listo! (simulado) — acá se conectará el envío real más adelante.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-libros">
+    <div class="page-head wrap">
+      <div class="eyebrow">Publicaciones</div>
+      <h1>Libros</h1>
+      <p>Listado de ejemplo. Reemplazá las portadas, títulos y descripciones por los libros reales.</p>
+    </div>
+    <div class="catalog-body wrap">
+      <div class="catalog-grid">
+        <div class="prod-card">
+          <div class="prod-cover">Portada<br>Libro 1</div>
+          <div class="prod-info">
+            <span class="prod-tag">Libro</span>
+            <h3>Título del libro 1</h3>
+            <p>Descripción breve de ejemplo sobre el contenido del libro.</p>
+            <div class="prod-foot"><span class="price">$0.000</span><button class="btn-sm">Comprar</button></div>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div class="prod-cover">Portada<br>Libro 2</div>
+          <div class="prod-info">
+            <span class="prod-tag">Libro</span>
+            <h3>Título del libro 2</h3>
+            <p>Descripción breve de ejemplo sobre el contenido del libro.</p>
+            <div class="prod-foot"><span class="price">$0.000</span><button class="btn-sm">Comprar</button></div>
+          </div>
+        </div>
+        <div class="prod-card">
+          <div class="prod-cover">Portada<br>Libro 3</div>
+          <div class="prod-info">
+            <span class="prod-tag">Libro</span>
+            <h3>Título del libro 3</h3>
+            <p>Descripción breve de ejemplo sobre el contenido del libro.</p>
+            <div class="prod-foot"><span class="price">$0.000</span><button class="btn-sm">Comprar</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-cursos">
+    <div class="page-head wrap">
+      <div class="eyebrow">Formación</div>
+      <h1>Cursos</h1>
+      <p>Listado de ejemplo. Reemplazá por los cursos, charlas o talleres reales disponibles.</p>
+    </div>
+    <div class="catalog-body wrap">
+      <div class="catalog-grid">
+        <div class="prod-card course">
+          <div class="prod-cover">Imagen<br>Curso 1</div>
+          <div class="prod-info">
+            <span class="prod-tag">Curso online</span>
+            <h3>Nombre del curso 1</h3>
+            <p>Descripción breve de ejemplo sobre el contenido del curso.</p>
+            <div class="prod-foot"><span class="price">$0.000</span><button class="btn-sm">Inscribirme</button></div>
+          </div>
+        </div>
+        <div class="prod-card course">
+          <div class="prod-cover">Imagen<br>Curso 2</div>
+          <div class="prod-info">
+            <span class="prod-tag">Taller presencial</span>
+            <h3>Nombre del curso 2</h3>
+            <p>Descripción breve de ejemplo sobre el contenido del curso.</p>
+            <div class="prod-foot"><span class="price">$0.000</span><button class="btn-sm">Inscribirme</button></div>
+          </div>
+        </div>
+        <div class="prod-card course">
+          <div class="prod-cover">Imagen<br>Curso 3</div>
+          <div class="prod-info">
+            <span class="prod-tag">Charla</span>
+            <h3>Nombre del curso 3</h3>
+            <p>Descripción breve de ejemplo sobre el contenido del curso.</p>
+            <div class="prod-foot"><span class="price">$0.000</span><button class="btn-sm">Inscribirme</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="brand">
+      <span class="lic">LIC.</span>
+      <span class="name">Leo Maiello</span>
+    </div>
+    <div class="socials">
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+      <a href="#">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const pages = document.querySelectorAll('.page');
+  const navButtons = document.querySelectorAll('[data-nav]');
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  function showPage(name){
+    pages.forEach(p => p.classList.toggle('active', p.id === 'page-' + name));
+    document.querySelectorAll('nav.links button').forEach(b => {
+      b.classList.toggle('active', b.dataset.nav === name);
+    });
+    navLinks.classList.remove('open');
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+
+  navButtons.forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      showPage(el.dataset.nav);
+    });
+  });
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+
+  const form = document.getElementById('subscribeForm');
+  const successMsg = document.getElementById('subSuccess');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    successMsg.classList.add('show');
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
